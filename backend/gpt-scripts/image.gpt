@@ -1,0 +1,4 @@
+tools: github.com/gptscript-ai/dalle-image-generation
+args: text: Text that image should be created for
+
+1. I have a story text that I want you to generate a vertical image for, preferably 1080 x 1920. Return just a plain text link. Here is the text: ${text}

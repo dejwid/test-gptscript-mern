@@ -1,0 +1,7 @@
+tools: github.com/gptscript-ai/browser,github.com/gptscript-ai/dalle-image-generation,sys.write,sys.download,sys.find,sys.read,github.com/nw0rn/text2speech-gptscript,github.com/dejwid/speech2text-gptscript
+args: dir: Directory to look into
+
+Do the following sequentially:
+1. Go to directory: ${dir} and list all mp3 files
+2. For each file, grab the number from the filename and convert audio to text.
+3. For each result, save it into directory ${dir} a file with name transcription-$THE_NUMBER.json

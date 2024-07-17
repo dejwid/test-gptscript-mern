@@ -1,0 +1,9 @@
+tools: github.com/gptscript-ai/dalle-image-generation,sys.write,sys.download
+description: creates images for a reel from a link
+args: dir: Directory to do stuff in
+
+1. Go to ${dir} directory and find all files with filename like story-$INDEX.txt
+2. For each file, read text inside the file and come up with a keyword or a phrase for a b-roll image.
+3. Generate those images for all files.
+4. Wait for the images to be generated.
+5. Download the images and save each image to the ${dir} directory with filename like b-roll-$INDEX.png

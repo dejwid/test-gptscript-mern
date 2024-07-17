@@ -1,0 +1,10 @@
+<h1>index page</h1>
+<form action="/" method="post">
+    story: <input name="url" type="url" placeholder="url" />
+    <button type="submit">submit</button>
+</form>
+<% if (texts) { %>
+    <% texts.forEach((text,index) => { %>
+        <textarea name="text[]" id="" cols="30" rows="10"></textarea>
+    <% }); %>
+<% } %>

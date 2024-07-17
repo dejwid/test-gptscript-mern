@@ -1,0 +1,10 @@
+tools: github.com/gptscript-ai/browser,sys.write,sys.download
+description: creates a text for a reel from a link
+args: link: Link to the article
+args: dir: Directory to save the files to
+
+Do the following sequentially, do not run in parallel. Always overwrite files.
+1. Browse ${link}
+2. Create a tldr text version of it for an instagram reel / tiktok video. The text should take around 12 seconds to read. It should start with a hook to make the video more viral and insteresting
+3. Split text into 3-4 fragments.
+4. Save each text fragment (including the intro/hook) to the ${dir} directory with filename story-$INDEX.txt

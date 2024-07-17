@@ -1,0 +1,1 @@
+Back in 2014, the hashrate measured about 1.1 gigahashes per second. This was low enough that most desktop PCs could mine Bitcoin. Toward the end of 2017, as adoption began picking up, the hashrate reached the terahash mark for the first time. As of July 6, 2024, it remains at 79.5 TH/s until the next difficulty update.

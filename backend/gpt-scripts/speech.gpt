@@ -1,0 +1,4 @@
+tools: github.com/nw0rn/text2speech-gptscript
+args: text: Text to create voiceover for
+
+1. Generate a voiceover and return a plain text public url to it (mp3 file). Here is the text: ${text}

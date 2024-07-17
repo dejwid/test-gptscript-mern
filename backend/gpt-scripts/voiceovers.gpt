@@ -1,0 +1,10 @@
+tools: sys.write,sys.download,github.com/nw0rn/text2speech-gptscript,github.com/dejwid/speech2text-gptscript
+description: creates a text and images for a reel from a link
+args: link: Link to the article
+args: dir: Directory to save the files to
+
+1. Go to ${dir} directory and find all files with filename like story-$INDEX.txt
+2. For each file, read text inside the file and generate speech/voiceover for it  
+3. Save to same dir with filename like speech-$INDEX
+4. For saved speech/voiceover file, generate text/subtitles information
+5. Save that info into same dir with filename subtitles-$INDEX

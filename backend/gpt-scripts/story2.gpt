@@ -1,0 +1,17 @@
+tools: github.com/gptscript-ai/browser
+tools: github.com/gptscript-ai/dalle-image-generation
+tools: github.com/dejwid/speech2text-gptscript
+tools: github.com/nw0rn/text2speech-gptscript
+tools: sys.write, sys.download, sys.find, sys.read
+description: Creates text, images, audio, and subtitles info for short video content
+args: link: Link to the article or page
+args: dir: Directory to save the files to
+
+Always wait for files to be saved before going to the next step.
+1. Browse to ${link} and read the page content.
+2. Create a TL;DR text version of it for an Instagram reel/TikTok video. No emojis, should take around 12 seconds to read it.
+3. Split the created text into 3 parts, save the texts to "${dir}/story-${INDEX}.txt".
+4. For each text part, come up with a keyword or a phrase for a b-roll image, generate and save them to: "${dir}/b-roll-${INDEX}.png".
+5. For each text part, generate speech files and save them to "${dir}/voiceover-${INDEX}". Don't pass the file type, use the default value.
+6. List all mp3 files inside ${dir}
+7. Take full path to the first *.mp3 file inside ${dir}, run speech2text on it and save the json response to "${dir}/transcription.json"
